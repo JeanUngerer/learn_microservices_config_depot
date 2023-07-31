@@ -11,7 +11,7 @@ spring:
     gateway:
       routes:
         - id: microservice-produit
-          uri: lb://
+          uri: lb://microservice-produit
           predicates:
             - Path=/api/**
           filters:
