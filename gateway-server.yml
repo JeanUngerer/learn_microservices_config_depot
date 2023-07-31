@@ -13,6 +13,6 @@ spring:
         - id: microservice-produit
           uri: lb://
           predicates:
-            - Path=/api/produit/**
+            - Path=/api/**
           filters:
-            - StripPrefix=2
+            - StripPrefix=1
