@@ -6,7 +6,7 @@ eureka:
     serviceUrl:
       defaultZone:
         # http://app-eureka:9102/eureka/
-        localhost:9102/eureka/
+        http://localhost:9102/eureka/
 spring:
   cloud:
     gateway:
