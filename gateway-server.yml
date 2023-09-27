@@ -9,6 +9,19 @@ eureka:
 spring:
   cloud:
     gateway:
+      corsConfigurations:
+        "[/**]":
+          allowedOrigins: "*"
+          allowedHeaders:
+            - content-type
+            - Authorization
+            - Access-Control-Request-Method
+            - Access-Control-Request-Headers
+          allowedMethods:
+            - GET
+            - POST
+            - DELETE
+            - PUT
       routes:
         - id: microservice-produits
           uri: lb://MICROSERVICE-PRODUITS
