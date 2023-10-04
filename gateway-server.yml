@@ -24,7 +24,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/test_gateway?createDatabaseIfNotExist=true
     username: root
-    password: admin
+    password: admin1
 
 
   cloud:
