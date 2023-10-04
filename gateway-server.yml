@@ -14,6 +14,8 @@ rsa:
 
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   jpa:
     generate-ddl: true
     show-sql: true
