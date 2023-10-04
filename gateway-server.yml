@@ -7,7 +7,24 @@ eureka:
       defaultZone:
         # http://app-eureka:9102/eureka/
         http://localhost:9102/eureka/
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+
+
 spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_gateway?createDatabaseIfNotExist=true
+    username: root
+    password: admin
+
+
   cloud:
     gateway:
       corsConfigurations:
