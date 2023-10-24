@@ -40,6 +40,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/test_gateway?createDatabaseIfNotExist=true
+      username: root
+      password: admin
 
   cloud:
     gateway:
