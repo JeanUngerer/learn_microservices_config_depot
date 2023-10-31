@@ -16,8 +16,9 @@ rsa:
 spring:
   main:
     allow-bean-definition-overriding: true
+    web-application-type: reactive
 
- # jpa:
+  # jpa:
  #   generate-ddl: true
  #   show-sql: true
  #   hibernate:
