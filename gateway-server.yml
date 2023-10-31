@@ -39,7 +39,12 @@ spring:
       ddl-auto: create-drop
   data:
     mongodb:
-      uri: mongodb://localhost:27017/test_gateway
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: test_gateway
+      port: 27017
+      host : localhost
 
   cloud:
     gateway:
