@@ -41,8 +41,8 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      username: rootuser
-      password: rootpass
+      username: admin
+      password: pass
       database: test_gateway
       port: 27017
       host : localhost
