@@ -1,0 +1,26 @@
+server:
+  port:
+    9031
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:
+        # http://app-eureka:9102/eureka/
+        http://localhost:9102/eureka/
+
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://localhost:3306/patients_infos?createDatabaseIfNotExist=true
+    username: root
+    password: admin1
+
+logging:
+  file:
+    name: logs/logfile.log
+  pattern:
+    file: "%d %p %c{1.} [%t] %m%n"
