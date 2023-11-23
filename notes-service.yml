@@ -1,0 +1,24 @@
+server:
+  port:
+    9032
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:
+        # http://app-eureka:9102/eureka/
+        http://localhost:9102/eureka/
+
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: test_notes
+      port: 27017
+      host : localhost
+
+logging:
+  file:
+    name: logs/logfile.log
+  pattern:
+    file: "%d %p %c{1.} [%t] %m%n"
