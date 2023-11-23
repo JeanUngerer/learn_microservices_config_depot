@@ -1,0 +1,15 @@
+server:
+  port:
+    9033
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:
+        # http://app-eureka:9102/eureka/
+        http://localhost:9102/eureka/
+
+logging:
+  file:
+    name: logs/logfile.log
+  pattern:
+    file: "%d %p %c{1.} [%t] %m%n"
