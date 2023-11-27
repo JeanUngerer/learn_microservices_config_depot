@@ -63,9 +63,26 @@ spring:
             - DELETE
             - PUT
       routes:
-        - id: microservice-produits
-          uri: lb://MICROSERVICE-PRODUITS
+        # patients
+        - id: patients-service
+          uri: lb://MICROSERVICE-PATIENTS
           predicates:
-            - Path=/api/produits/**
+            - Path=/api/patients/**
+          filters:
+            - StripPrefix=1
+
+        # notes
+        - id: notes-service
+          uri: lb://MICROSERVICE-NOTES
+          predicates:
+            - Path=/api/notes/**
+          filters:
+            - StripPrefix=1
+
+        # danger
+        - id: danger-service
+          uri: lb://MICROSERVICE-DANGER
+          predicates:
+            - Path=/api/danger/**
           filters:
             - StripPrefix=1
