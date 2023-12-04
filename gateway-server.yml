@@ -45,7 +45,7 @@ spring:
       routes:
         # patients
         - id: patients-service
-          uri: lb://MICROSERVICE-PATIENTS
+          uri: lb://PATIENTS-SERVICE
           predicates:
             - Path=/api/patients/**
           filters:
@@ -53,7 +53,7 @@ spring:
 
         # notes
         - id: notes-service
-          uri: lb://MICROSERVICE-NOTES
+          uri: lb://NOTES-SERVICE
           predicates:
             - Path=/api/notes/**
           filters:
@@ -61,7 +61,7 @@ spring:
 
         # danger
         - id: danger-service
-          uri: lb://MICROSERVICE-DANGER
+          uri: lb://DANGER-SERVICE
           predicates:
             - Path=/api/danger/**
           filters:
