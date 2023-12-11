@@ -15,7 +15,7 @@ spring:
       password: rootpass
       database: test_notes
       port: 27017
-      host : localhost
+      host : mongodb
 
 logging:
   file:

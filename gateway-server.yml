@@ -25,7 +25,7 @@ spring:
       password: rootpass
       database: test_gateway
       port: 27017
-      host : localhost
+      host : mongodb
 
   cloud:
     gateway:
