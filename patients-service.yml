@@ -9,7 +9,7 @@ eureka:
         #http://localhost:9102/eureka/
 
 spring:
-  jdbc:
+  jpa:
     generate-ddl: true
     show-sql: true
     hibernate:
