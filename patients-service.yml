@@ -19,6 +19,7 @@ spring:
     url: jdbc:mysql://mysql:3306/patients_infos?createDatabaseIfNotExist=true
     username: root
     password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 logging:
   file:
