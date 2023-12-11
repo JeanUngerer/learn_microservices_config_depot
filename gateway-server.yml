@@ -5,8 +5,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone:
-        # http://app-eureka:9102/eureka/
-        http://localhost:9102/eureka/
+        http://app-eureka:9102/eureka/
+      #http://localhost:9102/eureka/
 
 rsa:
   private-key: classpath:certs/private.pem
