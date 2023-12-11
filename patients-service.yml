@@ -9,14 +9,12 @@ eureka:
         #http://localhost:9102/eureka/
 
 spring:
-  jpa:
+  jdbc:
     generate-ddl: true
     show-sql: true
     hibernate:
       ddl-auto: create-drop
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.MySQL5Dialect
+      dialect: org.hibernate.dialect.MySQL5Dialect
   datasource:
     url: jdbc:mysql://localhost:3306/patients_infos?createDatabaseIfNotExist=true
     username: root
