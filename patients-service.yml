@@ -14,7 +14,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
-      #dialect: org.hibernate.dialect.MySQL5Dialect
+      dialect: org.hibernate.dialect.MySQL5Dialect
   datasource:
     url: jdbc:mysql://mysql:3306/patients_infos?createDatabaseIfNotExist=true
     username: root
